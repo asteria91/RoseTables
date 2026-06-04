@@ -1,0 +1,7 @@
+.elyback1{background-blend-mode: darken; background-image: url(https://images2.imgbox.com/48/d6/PSdxq74y_o.png); background-size: 100%; background-position: 300px -20px; background-repeat: no-repeat; padding-bottom: 20px; width: 700px; height:700px; padding:20px} 
+.Elysia1 {display: flex;align-items: center; color: #aebad6; gap: 20px; } 
+.Elyname1 {white-space: nowrap;font-size:40px;font-family:Galins} 
+.Elyne {flex-grow: 1;height: 1px; background-color: #aebad6;} #elyicon{font-size:30px} .elysub1{font-family:times;font-size:10px;text-transform:uppercase;padding-left:20px;position:relative;top:10px;color:#aebad6;text-align:left;margin-bottom:10px} 
+.elyimg{width:250px;height:600px;display:inline-block;margin-left:25px} 
+.elytext1 {width: 380px; height: 600px;overflow: auto; background: rgba(0, 0, 0, 0.2); padding: 20px; display: inline-block; color:#fff; text-align:justify}
+@font-face{font-family: 'Vidaloka';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/vidaloka/v18/7cHrv4c3ipenMKlEavs7wH8.woff2) format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
