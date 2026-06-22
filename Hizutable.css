@@ -1,0 +1,305 @@
+.Hizukib {
+  position: relative;
+  z-index: 1;
+  width: auto;
+  background: #151515;
+  border-top: 10px solid #748fd2;
+  border-bottom: 10px solid #748fd2;
+  padding: 24px;
+}
+.Hizukib br {
+  display: none;
+} /* ─── HEADER with static snowflakes ─── */
+.Hizhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #2a2a2a;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.hizttlg {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.hizicon {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 2px;
+  user-select: none;
+}
+.rpc-name {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.06em;
+  background: linear-gradient(135deg, #ffffff 20%, #aaaaaa 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.1;
+}
+.hizsubttl {
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: 2px;
+}
+.hizbadge1 {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  padding: 4px 14px;
+  border-radius: 100px;
+  background: #222;
+  border: 1px solid #333;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.hizbody {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  height: 500px;
+} /* ─── IMAGE (stretches to full height) ─── */
+.hizimgwrap {
+  flex: 0 0 250px;
+  width: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #111;
+  border: 1px solid #2a2a2a;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  transition: filter 0.4s;
+  filter: grayscale(0.2);
+}
+.hizimgwrap:hover {
+  filter: grayscale(0) brightness(1.04) contrast(1.04);
+  transition: filter 0.4s;
+}
+.Hizrcol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 180px;
+}
+.Hizinfo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 16px;
+  padding: 6px 0 4px;
+  border-bottom: 1px solid #2a2a2a;
+}
+.hizinfost {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+}
+.Hizsttitem {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  font-size: 9px;
+  color: #ccc;
+}
+.Hizsttitem .label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #d1d8e9;
+  font-weight: 600;
+}
+.Hizsttitem .value {
+  font-weight: 500;
+  color: #ddd;
+}
+.Hizsttitem .value.highlight {
+  color: #fff;
+  font-weight: 600;
+}
+.Hizu-quote {
+  font-size: 11px;
+  font-style: italic;
+  color: #c3c8d4;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.Hizu-quote .mark {
+  color: #959595;
+}
+ .Hiz-post {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 120px;
+}
+.Hiz-post-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #9aa4dd;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.Hiz-textarea {
+  width: 100%;
+  height: 430px;
+  overflow: auto;
+  flex: 1;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 13px;
+  padding: 12px 16px;
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: 14px;
+  line-height: 110%;
+  color: #e0e0e0;
+}
+.Hiz-textarea br {
+  display: block;
+} /* ─── FOOTER ─── */
+.Hiz-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #2a2a2a;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: #555;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.Hiz-footer .snow-divider {
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 10px;
+}
+.Hiz-tags {
+  display: flex;
+  gap: 10px;
+}
+.Hiz-tags span {
+  padding: 2px 12px;
+  border-radius: 100px;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  color: #fff;
+  text-transform: uppercase;
+}
+.Hiz-textarea::-webkit-scrollbar {
+  width: 4px;
+}
+.Hiz-textarea::-webkit-scrollbar-track {
+  background: transparent;
+}
+.Hiz-textarea::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+.RoseCredits {
+  display: block;
+  text-align: center;
+}
+
+.cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-decorative-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-decorative-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cinzel/v26/8vIJ7ww63mVu7gt7-GT7LEc.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cinzel/v26/8vIJ7ww63mVu7gt79mT7.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cinzeldecorative/v19/daaCSScvJGqLYhG8nNt8KPPswUAPni7dTMx7aA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cinzeldecorative/v19/daaCSScvJGqLYhG8nNt8KPPswUAPni7TTMw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cinzeldecorative/v19/daaHSScvJGqLYhG8nNt8KPPswUAPniZoadlKSTG7lQ.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cinzeldecorative/v19/daaHSScvJGqLYhG8nNt8KPPswUAPniZoadlESTE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cinzeldecorative/v19/daaHSScvJGqLYhG8nNt8KPPswUAPniZQa9lKSTG7lQ.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cinzeldecorative/v19/daaHSScvJGqLYhG8nNt8KPPswUAPniZQa9lESTE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
