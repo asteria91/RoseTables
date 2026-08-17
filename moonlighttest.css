@@ -1,0 +1,197 @@
+.__moonlight {
+    background: var(--bck-moon);
+    width: 500px;
+    padding: 10px;
+    display: grid;
+    margin: 20px auto 0 auto
+}
+
+.__moonlight br {
+    display: none
+}
+
+.__moonlight .__m-content br {
+    display: block
+}
+
+.__m-title {
+    margin: 0 auto;
+    width: 80%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+
+.__m-title span {
+    color: var(--accent1-moon);
+    font: 30px 'Margesh';
+    text-transform: lowercase;
+    text-shadow: var(--span-shadow) 0 0 15px
+}
+
+.__m-title span m {
+    color: var(--accent2-moon);
+    animation: blink linear infinite 4s
+}
+
+.__m-title::before {
+    content: ' ';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    border-right: 1px solid var(--accent1-moon);
+    border-top: 1px solid var(--accent1-moon)
+}
+
+.__m-title::after {
+    content: ' ';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    border-left: 1px solid var(--accent2-moon);
+    border-bottom: 1px solid var(--accent2-moon)
+}
+
+.__m-deco1 {
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center
+}
+
+.__m-deco1 line {
+    width: 1px;
+    height: 200px;
+    background: linear-gradient(45deg, transparent 0, var(--accent1-moon))
+}
+
+.__m-deco1 p {
+    font: italic 12px times;
+    letter-spacing: 8px;
+    color: var(--txt-moon)
+}
+
+.__m-deco1 p::after {
+    content: ' ';
+    position: absolute;
+    width: 150px;
+    background: linear-gradient(45deg, var(--accent1-moon), transparent);
+    height: 1px;
+    margin: 12px 0 0 -108px
+}
+
+.__m-content {
+    width: 85%;
+    margin: 60px auto 30px auto;
+    text-align: justify;
+    font-size: 15px;
+    line-height: normal;
+    color: var(--txt-moon);
+    font-family: 'Roboto'
+}
+
+.__m-content strong,
+.__m-content b {
+    color: var(--accent1-moon)
+}
+
+.__m-content i {
+    color: var(--accent1-moon)
+}
+
+.__m-content r {
+    color: #ffcc00
+}
+
+.__m-content u {
+    text-decoration-color: var(--accent1-moon);
+    text-decoration-thickness: 2px
+}
+
+.__m-down {
+    width: 400px;
+    margin: 50px auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.__m-down line {
+    width: 140px;
+    height: 1px;
+    background: var(--accent1-moon)
+}
+
+.__m-down icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 3px solid var(--accent1-moon);
+    border-right: 3px solid var(--accent1-moon);
+    border-radius: 100%;
+    color: var(--txt-moon)
+}
+
+.__m-down icon i {
+    font-size: 15px;
+    animation: blink infinite 8s
+}
+
+@keyframes blink {
+    78% {
+        color: inherit;
+        text-shadow: inherit
+    }
+
+    79% {
+        color: var(--accent2-moon)
+    }
+
+    80% {
+        text-shadow: none
+    }
+
+    81% {
+        color: inherit;
+        text-shadow: inherit
+    }
+
+    82% {
+        color: var(--accent2-moon);
+        text-shadow: none
+    }
+
+    83% {
+        color: inherit;
+        text-shadow: inherit
+    }
+
+    92% {
+        color: var(--accent2-moon);
+        text-shadow: none
+    }
+
+    92.5% {
+        color: inherit;
+        text-shadow: inherit
+    }
+}
+
+a.creditduran {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+    text-align: right;
+    font: 9px 'Roboto';
+    text-decoration: none;
+    color: var(--txt-moon)
+}
